@@ -11,11 +11,11 @@
 
   <project path="build/kernel" name="kernel/build" groups="kernel-platform,kernel-platform-612">
     <linkfile src="kleaf/bazel.sh" dest="tools/bazel" />
-    <linkfile src="kleaf/bzlmod/bazel.MODULE.bazel" dest="MODULE.bazel" />
     <linkfile src="kleaf/bzlmod/bazel.WORKSPACE.bzlmod" dest="WORKSPACE.bzlmod" />
   </project>
   <project path="build/bazel_mgk_rules" name="YaAlex3/kernel_build_bazel_mgk_rules-6.12" remote="github" revision="refs/heads/lineage-24.0" sync-c="true" >
     <linkfile src="kleaf/bazel.WORKSPACE" dest="WORKSPACE" />
+    <linkfile src="bzlmod/mgk.MODULE.bazel" dest="MODULE.bazel" />
   </project>
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="ddk" />
   <project path="kernel-6.12" name="kernel/common" revision="android16-6.12-2026-09" />
@@ -59,7 +59,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="ddk"/>
   <project path="external/zopfli" name="platform/external/zopfli" groups="ddk"/>
 
-  <!-- Motorola kernel -->
+  <!-- Tanzanite kernel -->
   <project path="kernel_device_modules-6.12" name="YaAlex3/kernel_xiaomi_tanzanite-modules" remote="github" revision="refs/heads/lineage-24.0" sync-c="true" >
     <linkfile src="build.config.tanzanite" dest="build.config" />
     <linkfile src="build_mgk_64_k612.sh" dest="build_mgk_64_k612.sh" />
